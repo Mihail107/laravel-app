@@ -15,5 +15,5 @@ mix.js('resources/js/app.js', 'public/js')
     .vue()
     .sass('resources/sass/app.scss', 'public/css').version();
 
-mix.copy('resouces/img','public/img');
+mix.copy('resources/img','public/img');
 
