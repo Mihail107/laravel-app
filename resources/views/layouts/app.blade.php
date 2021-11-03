@@ -3,14 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <title>Laravel</title>
-
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-        <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
-
+        <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
     </head>
     <body>
         <div class="container">
@@ -31,24 +27,9 @@
                     </a>
                 </div>
             </nav>
-            <div class="hero" style="background-image: url(/img/lorenzo-herrera.jpg);">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center">
-                        <div class="col-12">
-                            <div class="hero__content text-center">
-                                <div class="hero__content-tag">
-                                    <a href="#">Разработчик PHP - Laravel</a>
-                                </div>
-                                <h2><a href="#">Тестовое задание</a></h2>
-
-                                <div class="hero__content-tag">
-                                    <a href="#">Udemy.com</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @yield('hero')
+            @yield('content')
+            @yield('vue')
         </div>
     </body>
 </html>
